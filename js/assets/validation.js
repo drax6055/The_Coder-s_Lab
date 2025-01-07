@@ -1,0 +1,1 @@
+$(function(){"use strict";$("#form").submit(function(o){o.preventDefault();var n=$(this),t=n.serialize(),e=$("#form").attr("action");n.find("#send, .form-control").prop("disabled",!0),$.post(e,t,function(o){"sent"==o?(console.log("Sent"),$("#send").text("Thank you!")):console.log("Error: Something went wrong!")})})});
